@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<meta name="description" content="Programador Front-End, Senai.">
+<meta name="keywords" content="HTML, CSS, JavaScript, Senai">
+<meta name="author" content="Victor Freitas. Elaine lima, Lucas Farrapo">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shotcut icon" href="imagens/favicon.ico" type="image/x-icon">
+<title>Crocante & Cia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logotipo">
+                <a href="index.html"><img src="imagens/logo.png" alt="logo" class="logo img-zoom"></a>
+                <!--<h1 class="title">Crocante & Cia</h1>-->
+            </div>   
+        </nav>
+    </header>
+    <main>
+        <p class="subtitle">FALE CONOSCO</p>
+
+        <p class="contact-text">Os campos com * são de preenchimento obrigatório!</p>
+
+        <form class="contact">
+            <label class="contact-label">
+                Nome*
+                <input class="contact-field" type="texto" required>
+            </label>
+            <label class="contact-label">     
+                E-mail*
+                <input class="contact-field" type="texto" required>
+            </label>
+            <label class="contact-label">
+                Assunto*
+                <select class="contact-field">
+                    <option>Dúvidas</option>
+                    <option>Surgestões</option>
+                    <option>Críticas</option>
+                </select>
+            </label>
+            <label class="contact-label">
+                Mensagem*
+                <textarea class="contact-field" required></textarea>
+            </label>
+            <button class="button-form">Enviar</button>
+        </form>
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1627.6575586108108!2d-41.77740164859783!3d-2.9081665664923446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2fe7b0a81c43%3A0x46b78ca8ceae1148!2sSENAI%20Servi%C3%A7o%20Nacional%20de%20Aprendizagem%20Industrial!5e0!3m2!1spt-BR!2sbr!4v1715692576850!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer-container" id="main-footer-container">
+            <img src="imagens/footer.png" class="img-footer" id="img-footer" alt="img-footer" onresize="trocarImagem()">
+            <ul class="list-container">
+                <li class="footer-item">
+                    <a href="https://www.facebook.com/" target="_black"><img src="imagens/facebook.svg" alt="facebook-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.svg" alt="instagram-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.twitter.com/" target="_blank"><img src="imagens/x.svg" alt="x-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://open.spotify.com/playlist/14p6SvmZRdsAL8jOLi3ufX?si=fc9db2c0696e4795" target="_blank"><img src="imagens/spotify.svg" alt="spotify-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://youtube.com/playlist?list=PLLShyXYDt0zzQ1yEoUQPzjxwniUgogMRx&si=rBqc3O1q6QktB4mt" target="_blank"><img src="imagens/youtube.svg" alt="youtube-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="suporte.html" target="_blank"><img src="imagens/suporte.svg" alt="suporte"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

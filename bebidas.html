@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<meta name="description" content="Programador Front-End, Senai.">
+<meta name="keywords" content="HTML, CSS, JavaScript, Senai">
+<meta name="author" content="Victor Freitas">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shotcut icon" href="imagens/favicon.ico" type="image/x-icon">
+<title>Bebidas - Crocante & Cia</title>
+</head>
+
+<body>
+
+    <div class="title-container">
+        <h2 class="title-section">Bebidas</h2>
+    </div>
+    
+    <div class="grade">
+        <div class="container-product">
+            <h4>Sucos Variados</h4>
+            <img src="imagens/sucos-variados.jpg" alt="produto" class="img">
+            <div class="container-description">
+                <p class="description">
+                    Sucos naturais diretamente da fruta.
+                </p>
+            </div>
+                <div class="preco">
+                    <span>350ml - R$ 4,99</span>
+                </div>
+                <div class="options3">
+                    <div class="options2">
+                        <p>
+                            <input type="radio" name="opção" value="laranja" checked>
+                            <label>Laranja</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="opção" value="maracujá">
+                            <label>Maracujá</label>
+                        </p>
+                        </div>
+                    <div class="options2">
+                        <p>
+                            <input type="radio" name="opção" value="acerola">
+                            <label>Acerola</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="opção" value="abacaxi">
+                            <label>Abacaxi</label>
+                        </p>
+                    </div>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Sucos Variados" data-price="4.99" data-image="imagens/sucos-variados.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Sucos Variados" data-price="4.99" data-image="imagens/sucos-variados.jpg">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>Chá de Canela</h4>
+            <img src="imagens/cha1.jpg" alt="produto" class="img">
+            <div class="container-description">    
+                <p class="description">
+                   Chá de canela francesa com limão.
+                </p>
+            </div>
+            <div class="preco">
+                <span>R$ 3,49</span>
+            </div>
+                <div class="options">
+                    <p>
+                        <input type="radio"name="opcao1" value="250" checked>
+                        <label>250ml</label>
+                    </p>
+                </div>
+            
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Chá de Canela Francesa com Limão" data-price="3.49" data-image="imagens/cha1.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Chá de Canela Francesa com Limão" data-price="3.49" data-image="imagens/cha1.jpg">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>Chá de Cravinho</h4>
+            <img src="imagens/cha2.jpg" alt="produto" class="img">
+            <div class="container-description">
+                <p class="description">
+                    Chá de cravinho natural.
+                </p>
+            </div>
+            <div class="preco">
+                <span>R$ 3,49</span>
+            </div>
+                <div class="options">
+                    <p>
+                        <input type="radio" name="opcao2" value="250" checked>
+                        <label>250ml</label>
+                    </p>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Chá de Cravinho Natural" data-price="3.49" data-image="imagens/cha2.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Chá de Cravinho Natural" data-price="3.49" data-image="imagens/cha2.jpg">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>Café Puro</h4>
+            <img src="imagens/café.png" alt="produto" class="img">
+            <div class="container-description">
+                <p class="description">
+                    O velho e bom café puro, aqui servido no copo americano.
+                </p>
+            </div>
+            <div class="preco">
+                <span>R$ 6,99</span>
+            </div>
+                <div class="options">
+                    <p>
+                        <input type="radio" name="opcao3" value="250" checked>
+                        <label>250ml</label>
+                    </p>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Café Puro" data-price="6.99" data-image="imagens/café.png">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Café Puro" data-price="6.99" data-image="imagens/café.png">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>Café com Leite</h4>
+            <img src="imagens/cafe-leite.jpg" alt="produto" class="img">
+            <div class="container-description">
+                <p class="description">
+                    Café com leite fresco da melhor qualidade.
+                </p>
+            </div>
+            <div class="preco">
+                <span>R$ 8,99</span>
+            </div>
+                <div class="options">
+                    <p>
+                        <input type="radio" name="opcao4" value="250" checked>
+                        <label>250ml</label>
+                    </p>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Café com Leite" data-price="8.99" data-image="imagens/cafe-leite.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Café com Leite" data-price="8.99" data-image="imagens/cafe-leite.jpg">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>Refrigerantes</h4>
+            <img src="imagens/refrigerantes.jpg" alt="produto" class="img">
+            <div class="container-description">
+                <p class="description">
+                    Possuimos uma enorme variedade entre marcas e sabores de refrigerantes.
+                </p>
+            </div>
+            <div class="preco">
+                <span>R$ 3,99</span>
+            </div>
+            <div class="options3">
+                <div class="options2">
+                    <p>
+                        <input type="radio" name="opcao5" value="laranja" checked>
+                        <label>Laranja</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="opcao5" value="uva">
+                        <label>Uva</label>
+                    </p>
+                </div>
+                <div class="options2">
+                    <p>
+                        <input type="radio" name="opcao5" value="guarana">
+                        <label>Guaraná</label>
+                    </P>
+                    <p>
+                        <input type="radio" name="opcao5" value="coca">
+                        <label>Coca-Cola</label>
+                    </p>
+                </div>
+            </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Refrigerantes" data-price="3.99" data-image="imagens/refrigerantes.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Refrigerantes" data-price="3.99" data-image="imagens/refrigerantes.jpg">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        //Carrinho
+    document.querySelectorAll('.button-buy, .button-buy-now').forEach(button => {
+    button.addEventListener('click', function() {
+        const product = {
+            name: this.getAttribute('data-name'),
+            price: Number(this.getAttribute('data-price')),
+            image: this.getAttribute('data-image')
+        };
+        window.parent.postMessage(product, '*'); /*usamos '*' como origem, o que permite qualquer origem.
+        Em um ambiente de produção, você deve substituir '*' pelo domínio específico do seu site.*/
+    });
+});
+
+var buttons = document.querySelectorAll('.button-buy-now');
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Envia uma mensagem para o documento pai indicando que o botão foi clicado
+        window.parent.postMessage('button-buy-now', '*');
+    });
+});
+    </script>
+
+</body>
+</html>
+
+

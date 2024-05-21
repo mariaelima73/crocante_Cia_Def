@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<meta name="description" content="Programador Front-End, Senai.">
+<meta name="keywords" content="HTML, CSS, JavaScript, Senai">
+<meta name="author" content="Victor Freitas. Elaine lima, Lucas Farrapo">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shotcut icon" href="imagens/favicon.ico" type="image/x-icon">
+<title>Crocante & Cia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logotipo">
+                <img src="imagens/logo.png" alt="logo" class="logo img-zoom">
+                <!--<h1 class="title">Crocante & Cia</h1>-->
+            </div>   
+        </nav>
+    </header>
+
+    <p class="subtitle">A melhor padaria da região</p>
+
+    <div class="grade">
+
+    <section class="container" id="catPaes" onclick="redirecionar('iframe1')">
+        <h2 class="title-section">PÃES</h2>
+        <div class="slideshow-container" id="carousel1">
+            <div class="slide fade">
+                <img src="imagens/paes-cereais.png" class="img">
+            </div>
+            <div class="slide fade">
+                <img src="imagens/paes-carrosel.jpg" class="img">
+            </div>
+            <div class="slide fade">
+                <img src="imagens/paes-carrosel2.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+
+        <section class="container" id="catDoces" onclick="redirecionar('iframe2')">
+            <h2 class="title-section">DOCES</h2>
+            <div class="slideshow-container" id="carousel2">
+                <div class="slide fade">
+                    <img src="imagens/doce.png" class="img">
+                </div>
+                <div class="slide fade">
+                    <img src="imagens/donuts.jpg" class="img">
+                </div>
+                <div class="slide fade">
+                    <img src="imagens/doce-carrossel2.jpg" class="img">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container" id="catSalgados" onclick="redirecionar('iframe3')">
+            <h2 class="title-section">SALGADOS</h2>
+            <div class="slideshow-container" id="carousel3">
+                <div class="slide fade">
+                    <img src="imagens/salgado.png" class="img">
+                </div>
+                <div class="slide fade">
+                    <img src="imagens/tortinha2.jpg" class="img">
+                </div>
+                <div class="slide fade">
+                    <img src="imagens/enroladinho2.jpg" class="img">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container" id="catBebidas" onclick="redirecionar('iframe4')">
+            <h2 class="title-section">BEBIDAS</h2>
+            <div class="slideshow-container" id="carousel4">
+                <div class="slide fade">
+                    <img src="imagens/bebidas.png" class="img">
+                </div>
+                <div class="slide fade">
+                    <img src="imagens/bebidas-carrossel.jpg" class="img">
+                </div>
+                <div class="slide fade">
+                    <img src="imagens/bebidas-carrossel2.jpg" class="img">
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <div class="sobre" id="sobre">
+        <br>
+        <h3 class="about-title">SOBRE</h3>
+        <p class="weabout">
+            <img src="imagens/sobre-lobby.jpg" alt="lobby" class="about-image">
+            Bem vindos a Crocante & Cia, aqui nos buscamos manter a tradição, mas sempre buscando a inovação para assim criar a maior padaria gourmet on-line. Com o triunfo da mesma ganhou-se sedes físicas por todo o país, tornando-nos uma rede franqueada pelo mesmo, um case de sucesso, e com base na simplicidade e nos preços baratos, para nós o sorriso no rosto do cliente é lei. 
+            Fundada em 2024 por um trio de amigos visionários, eles tinham um sonho em mente, ter a maior e mais requintada padaria gourmet da internet. As nossas sedes físicas tem sido um ponto de encontro para os amantes da boa comida e da boa conversa. <br>
+            <img src="imagens/padaria.png" alt="lobbypardaria" class="about-image1">
+            O que nos diferencia é o nosso compromisso com ingredientes da mais alta qualidade, cuidadosamente selecionados de fornecedores locais e regionais sempre que possível. Cada pão, cada doce, cada salgado é feita à mão, com amor e atenção aos detalhes, para garantir que cada mordida seja uma experiência memorável.
+            Além de nossos pães artesanais, oferecemos uma ampla seleção de doces finos, bolos decorados, salgados gourmet e uma variedade de opções de bebidas, das quais se destacam o café, chás e sucos. Nossa equipe dedicada de padeiros está sempre explorando novas técnicas e combinações de sabores para surpreender e encantar o paladar de nossos clientes.
+            Na nossa padaria, acreditamos que comida é mais do que apenas sustento - é uma forma de arte, uma expressão de amor e uma fonte de conforto. Estamos comprometidos em proporcionar não apenas produtos excepcionais, mas também momentos memoráveis que unem famílias e comunidades. <br>
+            <br>
+            Obrigado por fazer parte da nossa jornada. Esperamos vê-lo em nossa padaria em breve, onde cada visita é uma celebração do prazer de comer bem. <br>
+            <br>
+            Com carinho, <br>
+            <br>
+            A equipe Crocante & Cia.
+        </p>
+    </div>
+    
+        <div class="divulgacao">
+            <img src="imagens/Apresentacao.gif" class="imgdivul">
+        </div>
+    
+    <h3 class="about-title">Nos encontre também!<h3>
+    <div class="delivery">
+        <a href="https://www.ifood.com.br/" target="_blank"><img src="imagens/ifood.svg" alt="lobby" class="delivery1"></a>
+        <a href="https://aiqfome.com/" target="_blank"><img src="imagens/aiqfome.svg" alt="lobby" class="delivery2"></a>
+    </div>
+    <footer class="main-footer">
+        <div class="main-footer-container" id="main-footer-container">
+            <img src="imagens/footer.png" class="img-footer" id="img-footer" alt="img-footer" onresize="trocarImagem()">
+            <ul class="list-container">
+                <li class="footer-item">
+                    <a href="https://www.facebook.com/" target="_black"><img src="imagens/facebook.svg" alt="facebook-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.svg" alt="instagram-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.twitter.com/" target="_blank"><img src="imagens/x.svg" alt="x-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://open.spotify.com/playlist/14p6SvmZRdsAL8jOLi3ufX?si=fc9db2c0696e4795" target="_blank"><img src="imagens/spotify.svg" alt="spotify-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://youtube.com/playlist?list=PLLShyXYDt0zzQ1yEoUQPzjxwniUgogMRx&si=rBqc3O1q6QktB4mt" target="_blank"><img src="imagens/youtube.svg" alt="youtube-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="suporte.html" target="_blank"><img src="imagens/suporte.svg" alt="suporte"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+<button id="voltarAoTopo">
+    <img src="imagens/arrow_up.png" alt="arrow up" class="scroll">
+</button>
+
+<script src="script1.js" defer></script>
+<script src="script2.js" defer></script>
+<script src="script4.js" defer></script>
+
+</body>
+</html>

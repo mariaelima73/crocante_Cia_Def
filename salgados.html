@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<meta name="description" content="Programador Front-End, Senai.">
+<meta name="keywords" content="HTML, CSS, JavaScript, Senai">
+<meta name="author" content="Victor Freitas">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shotcut icon" href="imagens/favicon.ico" type="image/x-icon">
+<title>Salgados - Crocante & Cia</title>
+</head>
+    <!--<header>
+        <nav>
+            <div class="logotipo">
+                <a href="index.html"><img src="imagens/logo.png" alt="logo" class="logo img-zoom"></a>
+
+            </div>        
+        </nav>
+    </header>-->
+<body>
+    <!--<div class="menu">
+        <nav class="main">    
+            <ul class="list">
+                <li>
+                    <button class="category" id="catPaes" type="button" value="PÃES" onclick="clicarPaes()">Pães</button>
+                </li>
+                <li>
+                    <button class="category" id="catDoc" type="button" value="DOCES" onclick="clicarDoces()">Doces</button>
+                </li>
+                <li>
+                    <button class="category" id="catBeb" type="button" value="BEBIDAS" onclick="clicarBebidas()">Bebidas</button>
+                </li>
+            </ul>     
+        </nav>
+    </div>
+
+    Produtos-->
+
+    <div class="title-container">
+        <h2 class="title-section">Salgados</h4>
+    </div>
+
+
+    <div class="grade">
+        <div class="container-product">
+            <h4>BOLINHA DE QUEIJO</h4>
+            <div class="box-img">
+                <img src="imagens/bolinha-queijo.jpg" alt="produto" class="img">
+            </div>
+            <div class="container-description">
+                <p class="description">
+                    Bolinha de queijo crocante recheada
+                </p>
+            </div>
+                <div class="preco">
+                    <span>R$ 7,49</span>
+                </div>
+                <div class="options">
+                    <p>
+                        <input type="radio" name="opção" value="cheedar" checked>
+                        <label>Cheedar</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="opção" value="parmesão"> 
+                        <label>Parmesão</label>
+                    </p>                    
+                    </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Bolinha de queijo" data-price="7.49" data-image="imagens/bolinha-queijo.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Bolinha de queijo" data-price="7.49" data-image="imagens/bolinha-queijo.jpg">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>COXINHA</h4>
+            <div>
+                <img src="imagens/coxinha.jpg" alt="produto" class="img">
+            </div>
+            <div class="container-description">  
+                <p class="description">
+                    Coxinha com recheio variado
+                </p>
+            </div>
+                <div class="preco">
+                    <span>R$ 5,99</span>
+                </div>
+                <div class="options">
+                <p>
+                    <input type="radio" name="opção1" value="carne" checked>
+                    <label>Carne</label>
+                </p>
+                <p>
+                    <input type="radio" name="opção1" value="frango">
+                    <label>Frango</label>
+                </p>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Coxinha" data-price="5.99" data-image="imagens/coxinha.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Coxinha" data-price="5.99" data-image="imagens/coxinha.jpg">Comprar</button>
+            </div>
+
+        </div>
+        
+        <div class="container-product">
+            <h4>ENROLADINHO</h4>
+            <img src="imagens/enroladinho.jpg" alt="produto" class="img">
+            <div class="container-description">    
+                <p class="description">
+                    Enroladinho crocante
+                </p>
+            </div>
+                <div class="preco">
+                    <span>R$ 4,99</span>
+                </div>
+                <div class="options3">
+                    <div class="options2">
+                        <p>
+                            <input type="radio" name="opção2" value="misto" checked>
+                            <label></label>Misto
+                        </p>
+                        <p>
+                            <input type="radio" name="opção2" value="carne">
+                            <label>Carne</label>
+                        </p>
+                    </div>
+                    <div class="options2">
+                        <p>
+                            <input type="radio" name="opção2" value="salsicha">
+                            <label>Salsicha</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="opção2" value="calabresa">
+                            <label>Calabresa</label>
+                        </p>
+                    </div>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Enroladinho" data-price="4.99" data-image="imagens/enroladinho.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Enroladinho" data-price="4.99" data-image="imagens/enroladinho.jpg">Comprar</button>
+            </div>
+
+        </div>
+        
+        <div class="container-product">
+            <h4>Tortinha</h4>
+            <img src="imagens/tortinha.jpg" alt="produto" class="img">
+            <div class="container-description">    
+                <p class="description">
+                    Tortinha feita com farinha de trigo e recheio personalizado
+                </p>
+            </div>
+                <div class="preco">
+                    <span>R$ 7,99</span>
+                </div>
+                <div class="options3">
+                    <div class="options2">
+                        <p>
+                            <input type="radio" name="opção3" value="misto" checked>
+                            <label>Misto</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="opção3" value="carne">
+                            <label>Carne</label>
+                        </p>
+                    </div>
+                    <div class="options2">
+                        <p>
+                            <input type="radio" name="opção3" value="salsicha">
+                            <label>Salsicha</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="opção3" value="frango">
+                            <label>Frango</label>
+                        </p>
+                    </div>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Tortinha" data-price="7.99" data-image="imagens/tortinha.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Tortinha" data-price="7.99" data-image="imagens/tortinha.jpg">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>Bomba Gigante</h4>
+            <img src="imagens/bomba-gigante.png" alt="produto" class="img">
+            <div class="container-description">    
+                <p class="description">
+                    Salgado Bomba com massa fofinha e recheio saboroso
+                </p>
+            </div>
+                <div class="preco">
+                    <span>R$ 4,99</span>
+                </div>
+                <div class="options3">
+                    <div class="options2">
+                        <P>
+                            <input type="radio" name="opção4" value="misto" checked>
+                            <label>Misto</label>
+                        </p>    
+                            <input type="radio" name="opção4" value="mortadela">
+                            <label>Mortadela</label>
+                        </p>
+                    </div>
+                    <div class="options2">
+                        <p>
+                            <input type="radio" name="opção4" value="frango">
+                            <label>Frango</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="opção4" value="carne">
+                            <label>Carne</label>
+                        </p>
+                    </div>
+                </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Bomba" data-price="4.99" data-image="imagens/bomba-gigante.png">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Bomba" data-price="4.99" data-image="imagens/bomba-gigante.png">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="container-product">
+            <h4>Pastel</h4>
+            <img src="imagens/pastel.jpg" alt="produto" class="img">
+            <div class="container-description">
+                <p class="description">
+                    Pastel com sabores variados
+                </p>
+            </div>
+            <div class="preco">
+                <span>R$ 5,99</span>
+            </div>
+            <div class="options3">
+                <div class="options2">
+                    <p>
+                        <input type="radio" name="opção5" value="presunto" checked>
+                        <label>Presunto</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="opção5" value="carne">
+                        <label>Carne</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="opção5" value="pizza">
+                        <label>Pizza</label>
+                    </p>
+                </div>
+                <div class="options2">
+                    <p>
+                        <input type="radio" name="opção5" value="queijo">
+                        <label>Queijo</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="opção5" value="calabresa">
+                        <label>Calabresa</label>
+                    </p>
+                </div>
+            </div>
+            <div class="add-button">
+                <button class="button button-buy" type="button"
+                    data-name="Pastel" data-price="5.99" data-image="imagens/pastel.jpg">Adicionar ao carrinho</button>
+                <button class="button button-buy-now" type="button"
+                    data-name="Pastel" data-price="5.99" data-image="imagens/pastel.jpg">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <!--<footer class="main-footer">
+        <div class="main-footer-container">
+            <img src="imagens/footer.png" class="img-footer" id="img-footer" alt="img-footer" onresize="trocarImagem()">
+            <ul class="list-container">
+                <li class="footer-item">
+                    <a href="https://www.facebook.com/" target="_black"><img src="imagens/facebook.svg" alt="facebook-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.svg" alt="instagram-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.twitter.com/" target="_blank"><img src="imagens/x.svg" alt="x-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://open.spotify.com/playlist/14p6SvmZRdsAL8jOLi3ufX?si=fc9db2c0696e4795" target="_blank"><img src="imagens/spotify.svg" alt="spotify-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://youtube.com/playlist?list=PLLShyXYDt0zzQ1yEoUQPzjxwniUgogMRx&si=rBqc3O1q6QktB4mt" target="_blank"><img src="imagens/youtube.svg" alt="youtube-logo"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>-->
+
+    <script defer>
+        //Carrinho
+    document.querySelectorAll('.button-buy, .button-buy-now').forEach(button => {
+    button.addEventListener('click', function() {
+        const product = {
+            name: this.getAttribute('data-name'),
+            price: Number(this.getAttribute('data-price')),
+            image: this.getAttribute('data-image')
+        };
+        window.parent.postMessage(product, '*'); /*usamos '*' como origem, o que permite qualquer origem.
+        Em um ambiente de produção, você deve substituir '*' pelo domínio específico do seu site.*/
+    });
+});
+
+var buttons = document.querySelectorAll('.button-buy-now');
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Envia uma mensagem para o documento pai indicando que o botão foi clicado
+        window.parent.postMessage('button-buy-now', '*');
+    });
+});
+
+    </script>
+
+</body>
+</html>
+
+

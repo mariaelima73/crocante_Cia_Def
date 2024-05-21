@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<meta name="description" content="Programador Front-End, Senai.">
+<meta name="keywords" content="HTML, CSS, JavaScript, Senai">
+<meta name="author" content="Victor Freitas">
+<link href="estilo.css" rel="stylesheet">
+<link rel="shotcut icon" href="imagens/favicon.ico" type="image/x-icon">
+<title>Menu - Crocante & Cia</title>
+</head>
+    <header>
+        <nav>
+            <div class="logotipo">
+                <a href="index.html"><img src="imagens/logo.png" alt="logo" class="logo img-zoom"></a>    
+            </div>        
+        </nav>
+    </header>
+<body>
+    <div class="menu">
+        <nav class="main">    
+            <ul class="list">
+                <li>
+                    <button class="category" id="catPaes" type="button" value="PÃES" onclick="clicarPaes()">Pães</button>
+                </li>
+                <li>
+                    <button class="category" id="catDoc" type="button" value="Doces" onclick="clicarDoces()">Doces</button>
+                </li>
+                <li>
+                    <button class="category" id="catSalg" type="button" value="Salgados" onclick="clicarSalgados()">Salgados</button>
+                </li>
+                <li>
+                    <button class="category" id="catBeb" type="button" value="Bebidas" onclick="clicarBebidas()">Bebidas</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <iframe sandbox="allow-same-origin allow-scripts" src="paes.html" frameborder="0" id="iframe1" class="resolucao"></iframe>
+        <iframe sandbox="allow-same-origin allow-scripts" src="doces.html" frameborder="0" id="iframe2" class="resolucao"></iframe>
+        <iframe sandbox="allow-same-origin allow-scripts" src="bebidas.html" frameborder="0" id="iframe4" class="resolucao"></iframe>
+        <iframe sandbox="allow-same-origin allow-scripts" src="salgados.html" frameborder="0" id="iframe3" class="resolucao"></iframe>
+    </div>
+
+<!--Tabela-->
+<h2 class="carrinho">CARRINHO</h2>
+
+    <div class="grade-cart">
+        <table class="container-cart" id="cart">
+            <!--CABEÇALHO DA TABELA-->
+            <thead>
+                <tr>
+                    <th class="table-header-item imagem-header"><!--Imagem--></th>
+                    <th class="table-header-item product-header">Produto</th>
+                    <th class="table-header-item preco-header">Preço</th>
+                    <th class="table-header-item quant-header">Quant.</th>
+                    <th class="table-header-item preco-header">Total</th>
+                    <th class="table-header-item remover-header"><!--Remover--></th>    
+                </tr>
+            </thead>
+
+            <tbody>
+                <!--Aqui aparecerão os produtos-->
+            </tbody>
+
+            <!--RODAPÉ DA TABELA-->
+            <tfoot>
+                <tr>
+                    <td colspan="6">
+                        <div id="total-geral"><strong>Total dos Itens: R$ 0,00</strong></div>
+                    </td>
+                </tr>   
+            </tfoot>
+        </table>
+
+        <section class="container-payment">
+            <h3 class="title-payment">Forma de pagamento:</h3>
+            
+            <div class="payment">
+                <p class="for-payment">
+                <input type="radio" name="opção_payment" value="boleto" checked>
+                <label>BOLETO</label>
+                <img src="imagens/boleto.svg" alt="boleto" class="img-payment">
+                </p>
+                <p class="for-payment">
+                <input type="radio" name="opção_payment" value="cartão">
+                <label>CARTÃO</label>
+                <img src="imagens/cartoes.png" alt="cartão" class="img-payment1">
+                </p>
+                <p class="for-payment">
+                <input type="radio" name="opção_payment" value="pix">
+                <label>PIX</label>
+                <img src="imagens/pix.png" alt="pix" class="img-payment">
+                </p>
+            </div>
+            
+            <button type="button" class="purchase-button">Finalizar compra</button>
+        </section>
+
+    </div>
+
+<!--Rodapé-->
+
+    <footer class="main-footer">
+        <div class="main-footer-container">
+            <img src="imagens/footer.png" class="img-footer" id="img-footer" alt="img-footer" onresize="trocarImagem()">
+            <ul class="list-container">
+                <li class="footer-item">
+                    <a href="https://www.facebook.com/" target="_black"><img src="imagens/facebook.svg" alt="facebook-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.svg" alt="instagram-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.twitter.com/" target="_blank"><img src="imagens/x.svg" alt="x-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://open.spotify.com/playlist/14p6SvmZRdsAL8jOLi3ufX?si=fc9db2c0696e4795" target="_blank"><img src="imagens/spotify.svg" alt="spotify-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://youtube.com/playlist?list=PLLShyXYDt0zzQ1yEoUQPzjxwniUgogMRx&si=rBqc3O1q6QktB4mt" target="_blank"><img src="imagens/youtube.svg" alt="youtube-logo"></a>
+                </li>
+                <li class="footer-item">
+                    <a href="suporte.html" target="_blank"><img src="imagens/suporte.svg" alt="suporte"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script1.js" defer></script>
+    <script src="script3.js"defer></script>
+    <script src="script4.js" defer></script>
+
+</body>
+</html>
