@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/paescereais.html"
+    "livePreview.defaultPreviewPath": "/paescereais.html",
+    "liveServer.settings.port": 5501
 }

@@ -103,22 +103,14 @@ function updateTotalGeral() {
     }
 }
 
+// Verifica se a mensagem recebida é para rolar para o final da página
 window.addEventListener('message', function(event) {
-    // Verifica se a mensagem recebida é para rolar para o final
+
     if (event.data === 'button-buy-now') {
         // Rola para o final da página
         window.scrollTo(0, document.body.scrollHeight);
     }
 });
-
-// Função para limpar o carrinho
-function limparCarrinho() {
-    const cart = document.getElementById('cart').getElementsByTagName('tbody')[0];
-    while (cart.firstChild) {
-        cart.removeChild(cart.firstChild);
-    }
-    updateTotalGeral();
-}
 
 //Finalizar Compra
 var finalizarCompra = document.querySelector('.purchase-button')
@@ -133,12 +125,23 @@ finalizarCompra.addEventListener('click', function() {
             //e da o valor a variavel criada
             opcaoSelect = opcao.value
         }
-
-    // Verifica se o carrinho está vazio
-    if ((opcaoSelect === 'pix') || (opcaoSelect === 'boleto') || (opcaoSelect === 'cartão')) {
-        var orderNumber = Math.floor(100 + Math.random() * 900);
-        alert(`Sua compra foi finalizada, seu pedido é o número ${orderNumber}. Agradecemos a preferência e aguardamos o seu retorno.`);
-        limparCarrinho()
+})
+// Verifica se alguma opção foi selecionada
+if (opcaoSelect) {
+    var orderNumber = Math.floor(100 + Math.random() * 900);
+    var alerta = `Sua compra foi finalizada com o valor de ${totalGeral}, seu pedido é o número ${orderNumber}. Agradecemos a preferência e aguardamos o seu retorno.`;
+    alert(alerta)
+    limparCarrinho()
+} else {
+    alert("Por favor, selecione uma opção de pagamento.")
+}
+})
+// Função para limpar o carrinho
+function limparCarrinho() {
+    const cart = document.getElementById('cart').getElementsByTagName('tbody')[0];
+    while (cart.firstChild) {
+        cart.removeChild(cart.firstChild);
     }
-})
-})
+    updateTotalGeral()
+    
+}
